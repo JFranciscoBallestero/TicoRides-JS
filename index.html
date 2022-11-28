@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TicoRides</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <button class="btnRight"  type="button" onclick="window.location.href='login.html'">
+                Login
+            </button>
+            <div class="banner">
+                <div  class="image" >
+                    <img src="/images/car-icon.png" width="150" height="150" alt="">
+                </div>
+                <h1> Welcome to TicoRides.com </h1>
+            </div>
+            <section>
+                <h2 >Search for a ride</h2>
+                <form class="form-inline" action="search.php">
+                    <label>From:</label>
+                    <input type="text" name="from" placeholder="Input text">
+                    <button type="button" onclick="window.location.href='https://www.google.com/maps'">
+                        <img src="/images/Google-Maps-icon.png" alt="">
+                    </button>
+                    <label>To:</label>
+                    <input type="text" name="to" placeholder="Input text">
+                    <button type="button" onclick="window.location.href='https://www.google.com/maps'">
+                        <img src="/images/Google-Maps-icon.png" alt="" >
+                    </button>
+                    <button type="button" class="btn">Find my Ride!</button>
+                </form>
+            </section>
+            <section>
+                <h3>Results for Rides that matches your criteria:</h3>
+                <table class="tbl">
+                    <tr>
+                        <th>User</th>
+                        <th>Start</th>
+                        <th>End</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>barroyo</td>
+                        <td>Barrio Los Angeles</td>
+                        <td>Ciudad Quesada</td>
+                        <td><a href="">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>barroyo</td>
+                        <td>Ciudad Quesada</td>
+                        <td>Barrios Los Angeles</td>
+                        <td><a href="">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>yluna</td>
+                        <td>Ciudad Quesada</td>
+                        <td>San Pedro</td>
+                        <td><a href="">View</a></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </body>
+</html>

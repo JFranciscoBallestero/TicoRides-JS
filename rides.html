@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>New Ride - TicoRides</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+    <body >
+        <div class="container">
+            <div class="user">
+                <img src="/images/Folders-OS-User-No-Frame-Metro-icon.png" alt="">
+            </div>
+            <div class="txtUser">
+                <p>Welcome Barroyo</p>
+                <button class="btnOut"  type="button" onclick="window.location.href='http://ticorides.com'">
+                    Logout
+                </button> 
+            </div>
+            <div>
+                <img class="img2" src="/images/car-icon.png" alt="" width="150" height="100">
+            </div>
+        </div>
+        <div class="container">
+            <div class="topnav">
+                <a href="dashboard.html">Dashboard</a>
+                <a class="active" href="">New Ride</a>
+                <a href="settings.html">Settings</a>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <h2>New Ride</h2>
+                <ul class="breadcrumb">
+                    <li><a href="dashboard.html">My Dashboard</a></li>
+                    <li>New Ride</li>
+                </ul>
+            </div>
+            <form action="ride.php" method="post">
+                <table class="left">
+                    <tr>
+                        <th>Ride Name</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="ride_name" placeholder="Input text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th >Start From</th>
+                        <th>End</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="start_ride" placeholder="Input text">
+                            <button type="button" onclick="window.location.href='https://www.google.com/maps'">
+                                <img src="/images/Google-Maps-icon.png" alt="">
+                            </button>
+                        </td>
+                        <td>
+                            <input type="text" name="start_ride" placeholder="Input text">
+                            <button type="button" onclick="window.location.href='https://www.google.com/maps'">
+                                <img src="/images/Google-Maps-icon.png" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea rows = "5" cols = "40" name = "description" placeholder="Add here the description of the ride"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            
+            <form action="ride.php" method="post">
+                <div class="row">
+                    <div class="column">
+                        <table class="left">
+                            <tr>
+                                <th>When</th>
+                            </tr>
+                            <tr>
+                                <th>Departure</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="ride_dep" placeholder="00:00">
+        
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Estimade Arrival</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text"  name="ride_ar" placeholder="00:00">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <th>Select Days</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" value="Monday">
+                                    <label for="vehicle1"> Monday</label><br>
+                                    <input type="checkbox" value="Tuesday">
+                                    <label for="vehicle1"> Tuesday </label><br>
+                                    <input type="checkbox" value="Wednesday">
+                                    <label for="vehicle1"> Wednesday </label><br>
+                                    <input type="checkbox" value="Thursday">
+                                    <label for="vehicle1"> Thursday </label><br>
+                                    <input type="checkbox" value="Friday">
+                                    <label for="vehicle1"> Friday </label><br>
+                                    <input type="checkbox" value="Saturday">
+                                    <label for="vehicle1"> Saturday </label><br>
+                                    <input type="checkbox" value="Sunday">
+                                    <label for="vehicle1"> Sunday </label><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </form>
+            <button type="button" class="cancel" onclick="window.location.href='dashboard.html'">Cancel</button>
+            <button type="button" class="save" onclick="window.location.href='dashboard.html'">Save</button>
+        </div>
+    </body>
+</html>

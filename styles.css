@@ -1,0 +1,345 @@
+/*  */
+.container {
+    display:  contents;
+    flex-wrap: wrap;
+    font-family: 'Allerta';
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Used to accomodate the image used for the main banner */
+.image{
+    flex-shrink: 0;
+    position: relative;
+    top: 10px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.img{
+    flex-shrink: 0;
+    position: relative;
+    top: 5px;
+    left: -52px;
+}
+
+.img2{
+    flex-shrink: 0;
+    position: relative;
+    top: -10px;
+    left: -15px;
+}
+.user{
+    flex-basis: 40%;
+    float: right;
+    
+}
+
+.txtUser{
+    font-size: 20px;
+    padding-right: 20px;
+    float: right;
+}
+
+.bd{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+
+.banner {
+    border-radius:6px;
+    padding: 10px;
+    background: #5b8e18;
+    color: white;
+    font-size: 30px;
+    flex-shrink: 0;
+    top: 0;
+    left: 0;
+}
+
+.btn{   
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:6px;
+	border:1px solid #000000;
+	cursor:pointer;
+    color:#030303;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    
+}
+
+button.save{   
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #bee49b 5%, #6af348 100%);
+	background-color:#f9f9f9;
+	border-radius:6px;
+	border:1px solid #000000;
+	cursor:pointer;
+    color:#030303;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    margin-left: 100px;
+    
+}
+
+button.cancel{   
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #eb8d8d 5%, #c73333 100%);
+	background-color:#f9f9f9;
+	border-radius:6px;
+	border:1px solid #000000;
+	cursor:pointer;
+    color:#030303;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    margin-right: 100px;
+    margin-left: -270px;
+}
+
+button.cancelSet{   
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #eb8d8d 5%, #c73333 100%);
+	background-color:#f9f9f9;
+	border-radius:6px;
+	border:1px solid #000000;
+	cursor:pointer;
+    color:#030303;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    margin-right: 100px;
+    margin-left: -5px;
+}
+
+.btnRight {
+    float: right;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:6px;
+	border:1px solid #000000;
+	cursor:pointer;
+	color:#030303;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+
+.btnLeft{
+    float: left;    
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:6px;
+	border:1px solid #000000;
+	cursor:pointer;
+    color:#030303;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+    
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+
+.btnOut{
+    float: right;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:6px;
+	border:1px solid #000000;
+	cursor:pointer;
+	color:#030303;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+ 
+}
+
+
+.entry{
+    border: none;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.form-inline{
+    border: black solid;
+    font-size:42px;
+    border-radius: 6px;
+    border-width: 2px;
+    display: block;
+    flex-flow: row wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.form-inline label {
+    margin: 5px 10px 5px 10px;
+    font-size: xx-large;
+}
+  
+.form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.form-inline button{
+    padding: 10px 20px;
+    margin: 0 0 10px 0;
+}
+
+@media (max-width: 800px) {
+    .form-inline input {
+      margin: 10px 0;
+    }
+    
+    .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+input.big {
+    height:180px;
+    width: 250px;
+}
+
+.search{
+    display:block;
+    width:100%; 
+    border-bottom:1px solid red; 
+    margin-top:25px; 
+    text-align:center;
+}
+
+.tbl{
+    width: 100%;
+    border-radius:6px;
+    border-style: groove;
+}
+
+.tbl th{
+    background-color: #4d4c4c;
+    border-radius:6px;
+    border-style: groove;
+    text-align: left;
+    padding: 16px;
+    color: white;
+}
+
+.tbl td{
+    background-color: #9c9c9c;
+    border-radius:6px;
+    border-style: groove;
+    text-align: left;
+    padding: 16px;
+    color: white;
+}
+table.left {
+    text-align: left;
+}
+
+
+table.leftB {
+    border-top: black solid;
+    text-align: left;
+}
+
+.topnav {
+    border-radius:6px;
+    border-style: groove;
+    overflow: hidden;
+    background-color: #4d4c4c;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    pointer-events: none;
+    background-color: #fafafa;
+    color: rgb(7, 7, 7);
+  }
+  
+  ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">\00a0";
+  }
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+
+  .row {
+    border-top: solid;
+    margin-left:-10px;
+    margin-right: 70%;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    float: left;
+    content: "";
+    display: table;
+    clear: both;
+  }

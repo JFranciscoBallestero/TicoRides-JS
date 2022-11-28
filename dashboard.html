@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Dashboad - TicoRides</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+    <body >
+        <div class="container">
+            <div class="user">
+                <img src="/images/Folders-OS-User-No-Frame-Metro-icon.png" alt="">
+            </div>
+            <div class="txtUser">
+                <p>Welcome Barroyo</p>
+                <button class="btnOut"  type="button" onclick="window.location.href='index.html'">
+                    Logout
+                </button> 
+            </div>
+            <div>
+                <img class="img2" src="/images/car-icon.png" alt="" width="150" height="100">
+            </div>
+        </div>
+        <div class="container">
+            <div class="topnav">
+                <a class="active" href="">My Dashboard</a>
+                <a href="rides.html">New Ride</a>
+                <a href="settings.html">Settings</a>
+            </div>
+            <div>
+                <div>
+                    <h2>My Dashboard</h2>
+                    <ul class="breadcrumb">
+                        <li>My Dashboard</li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <section>
+                <h3>My Rides:</h3>
+                <table class="tbl">
+                    <tr>
+                        <th>Name</th>
+                        <th>Start</th>
+                        <th>End</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td>Brete</td>
+                        <td>Barrio Los Angeles</td>
+                        <td>Ciudad Quesada</td>
+                        <td><a href="view.html">View</a>-<a href="edit.html">Edit</a>-<a href="delete.html">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>Casa</td>
+                        <td>Ciudad Quesada</td>
+                        <td>Barrios Los Angeles</td>
+                        <td><a href="view.html">View</a>-<a href="edit.html">Edit</a>-<a href="delete.html">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>Oficina Chepe</td>
+                        <td>Ciudad Quesada</td>
+                        <td>San Pedro</td>
+                        <td><a href="view.html">View</a>-<a href="edit.html">Edit</a>-<a href="delete.html">Delete</a></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </body>
+</html>

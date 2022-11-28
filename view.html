@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>View - TicoRides</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+    <body >
+        <div class="container">
+            <div class="user">
+                <img src="/images/Folders-OS-User-No-Frame-Metro-icon.png" alt="">
+            </div>
+            <div class="txtUser">
+                <p>Welcome Barroyo</p>
+                <button class="btnOut"  type="button" onclick="window.location.href='index.html'">
+                    Logout
+                </button> 
+            </div>
+            <div>
+                <img class="img2" src="/images/car-icon.png" alt="" width="150" height="100">
+            </div>
+        </div>
+        <div class="container">
+            <div class="topnav">
+                <a href="dashboard.html">Dashboard</a>
+                <a class="active" href="">New Ride</a>
+                <a href="settings.html">Settings</a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>View Ride</h2>
+                <ul class="breadcrumb">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li>View Ride</li>
+                </ul>
+            </div>
+            <form action="ride.php" method="post" name="f1">
+                <table class="left">
+                    <tr>
+                        <th>Ride Name</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="ride_name" placeholder="Input text" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th >Start From</th>
+                        <th>End</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="start" placeholder="Input text" readonly>
+                            <button type="button" onclick="window.location.href='https://www.google.com/maps'">
+                                <img src="/images/Google-Maps-icon.png" alt="">
+                            </button>
+                        </td>
+                        <td>
+                            <input type="text" name="end" placeholder="Input text" readonly> 
+                            <button type="button" onclick="window.location.href='https://www.google.com/maps'">
+                                <img src="/images/Google-Maps-icon.png" alt="">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea rows = "5" cols = "40" name = "description" placeholder="Add here the description of the ride" readonly></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            
+            <form action="ride.php" method="post" name="f2">
+                <div class="row">
+                    <div class="column">
+                        <table class="left">
+                            <tr>
+                                <th>When</th>
+                            </tr>
+                            <tr>
+                                <th>Departure</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="ride_dep" placeholder="00:00" readonly>
+        
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Estimade Arrival</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text"  name="ride_ar" placeholder="00:00" readonly>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <th>Select Days</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="mon" value="Monday" disabled>
+                                    <label for="vehicle1"> Monday</label><br>
+                                    <input type="checkbox" name="tue" value="Tuesday" disabled>
+                                    <label for="vehicle1"> Tuesday </label><br>
+                                    <input type="checkbox" name="wed" value="Wednesday" disabled>
+                                    <label for="vehicle1"> Wednesday </label><br>
+                                    <input type="checkbox" name="thu" value="Thursday" disabled>
+                                    <label for="vehicle1"> Thursday </label><br>
+                                    <input type="checkbox" name="fri" value="Friday" disabled>
+                                    <label for="vehicle1"> Friday </label><br>
+                                    <input type="checkbox" name="sat" value="Saturday" disabled>
+                                    <label for="vehicle1">  Saturday </label><br>
+                                    <input type="checkbox" name="sun" value="Sunday" disabled>
+                                    <label for="vehicle1"> Sunday </label><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </form>
+            <button type="button" class="cancel" onclick="window.location.href='dashboard.html'">Cancel</button>
+            <button type="button" class="save" onclick="window.location.href='dashboard.html'">Save</button>
+        </div>
+
+        <script>
+            document.f1.ride_name.value = "Example Ride"
+            document.f1.start.value = "Location X"
+            document.f1.end.value = "Location Y"
+            document.f1.description.value = "Random Description"
+            document.f2.ride_dep.value = "07:00 am"
+            document.f2.ride_ar.value = "07:30 am"
+            document.f2.mon.checked = true
+            document.f2.tue.checked = true
+            document.f2.wed.checked = true
+            document.f2.thu.checked = true
+            document.f2.fri.checked = true
+        </script>  
+    </body>
+</html>

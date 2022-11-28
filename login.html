@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign In</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+    <body >
+        <div class="bd">
+            <div>
+                <button class="btnLeft" type="button" onclick="window.location.href='index.html'">
+                    Go Back
+                </button>
+                <img class="img" src="/images/car-icon.png" alt="" width="250" height="200">
+                <section>
+                    <h1>Sing in to continue</h1>
+                    <h3>to your Personal Dashboard</h3>
+                    <form action="login.php" method="post">
+                        <table class="entry">
+                            <tr>
+                                <th>Username</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="user" placeholder="Input text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Password</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="password" name="user_pass" placeholder="*******">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Not an User?   <a href="register.html">Register Here</a></p>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn" onclick="window.location.href='dashboard.html'">Login</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
