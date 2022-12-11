@@ -1,16 +1,16 @@
 $(function(){
-    
     /*Fuction used to register a user*/ 
     $('#register').click(function register(){    
         const frtName = document.getElementById('firstName').value;
         const lstName = document.getElementById('lastName').value;
+        const fullName = frtName + ' ' + lstName;
         const number = document.getElementById('phone').value;
         const usName = document.getElementById('username').value;
         const pass = document.getElementById('userPass1').value;
         const passVerf = document.getElementById('userPass2').value;
         const speed = '';
         const about = '';
-        const data = {frtName, lstName, number, usName, pass, speed, about};
+        const data = {fullName, number, usName, pass, speed, about};
         if (frtName == '' || lstName == '' || number == '' || usName == '' || pass == '' ||
             passVerf == ''){
             alert('Please fill every space.');

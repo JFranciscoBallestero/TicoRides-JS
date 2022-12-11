@@ -12,7 +12,7 @@
                 <img src="/images/Folders-OS-User-No-Frame-Metro-icon.png" alt="">
             </div>
             <div class="txtUser">
-                <p>Welcome Barroyo</p>
+                <p id="wlcmMessage"></p>
                 <button class="btnOut"  type="button" onclick="window.location.href='index.html'">
                     Logout
                 </button> 
@@ -43,7 +43,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" name="full_name" placeholder="Input text">
+                            <input type="text" id="fullName" name="full_name" placeholder="Input text">
                         </td>
                     </tr>
                     <tr>
@@ -51,7 +51,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" name="user_speed" placeholder="XX km/h">
+                            <input type="text" id="speed" name="user_speed" placeholder="XX km/h">
                         </td>
                     </tr>
                     <tr>
@@ -59,7 +59,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <textarea rows = "5" cols = "40" name = "description" placeholder="Something about me goes here"></textarea>
+                            <textarea rows = "5" cols = "40" id="about" name = "description" placeholder="Something about me goes here"></textarea>
                         </td>
                     </tr>
                     <tr>
@@ -73,9 +73,7 @@
                 </table>
             </form>
         </div>
-        <script>
-            document.f1.full_name.value = "Bladimir Arroyo"
-            document.f1.user_speed.value = "60 km/h"
-        </script>        
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="js/dashboard.js"></script>      
     </body>
 </html>
