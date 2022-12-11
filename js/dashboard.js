@@ -3,7 +3,7 @@ $(function(){
     const current = JSON.parse(localStorage.getItem('currentUser'));
     let message = document.getElementById("wlcmMessage");
     message.innerHTML = "Welcome " + current[0]['usName'];
-    /*Generates the welcome message*/
+    /*Generates the data that appears on the Settings page*/
     let fullName = document.getElementById("fullName");
     fullName.value = current[0]['fullName'];
     let speed = document.getElementById("speed");
