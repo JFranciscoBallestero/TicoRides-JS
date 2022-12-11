@@ -63,9 +63,13 @@ $(function(){
                     saveToLocalStorage('currentUser', current);
                     window.location.href = 'dashboard.html';
                 }
+                else{
+                    alert('There are no users registered with those credentials. Try again.')
+                }
             }
         }
     })
+    /*Fuction used to save information into the Local Storage*/
     function saveToLocalStorage(key, value) {
         localStorage.setItem(key, JSON.stringify(value));
         return true;
