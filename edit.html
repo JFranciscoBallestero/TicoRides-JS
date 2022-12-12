@@ -47,18 +47,21 @@
                         </td>
                     </tr>
                     <tr>
-                        <th >Start From</th>
-                        <th>End</th>
+                        <th>Start From</th>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" name="start" placeholder="Input text">
+                            <input type="text" name="start" placeholder="Input text" readonly>
                             <button type="button" onclick="window.location.href='https://www.google.com/maps'">
                                 <img src="/images/Google-Maps-icon.png" alt="">
                             </button>
                         </td>
+                    </tr>
+                    <tr>
+                        <th>End</th>
+                    </tr>
                         <td>
-                            <input type="text" name="end" placeholder="Input text"> 
+                            <input type="text" name="end" placeholder="Input text" readonly>
                             <button type="button" onclick="window.location.href='https://www.google.com/maps'">
                                 <img src="/images/Google-Maps-icon.png" alt="">
                             </button>
@@ -114,24 +117,19 @@
                             <tr>
                                 <td>
                                     <input type="checkbox" name="mon" value="Monday">
-                                    <label for="vehicle1"> Monday</label><br>
+                                    <label>Monday</label><br>
                                     <input type="checkbox" name="tue" value="Tuesday">
-                                    <label for="vehicle1"> Tuesday </label><br>
+                                    <label>Tuesday</label><br>
                                     <input type="checkbox" name="wed" value="Wednesday">
-                                    <label for="vehicle1"> Wednesday </label><br>
+                                    <label>Wednesday</label><br>
                                     <input type="checkbox" name="thu" value="Thursday">
-                                    <label for="vehicle1"> Thursday </label><br>
+                                    <label>Thursday</label><br>
                                     <input type="checkbox" name="fri" value="Friday">
-                                    <label for="vehicle1"> Friday </label><br>
+                                    <label>Friday</label><br>
                                     <input type="checkbox" name="sat" value="Saturday">
-                                    <label for="vehicle1">  Saturday </label><br>
+                                    <label>Saturday</label><br>
                                     <input type="checkbox" name="sun" value="Sunday">
-                                    <label for="vehicle1"> Sunday </label><br>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    
+                                    <label>Sunday</label><br>
                                 </td>
                             </tr>
                         </table>
@@ -141,20 +139,6 @@
             <button type="button" class="cancel" onclick="window.location.href='dashboard.html'">Cancel</button>
             <button type="button" class="save" onclick="window.location.href='dashboard.html'">Save</button>
         </div>
-
-        <script>
-            document.f1.ride_name.value = "Example Ride"
-            document.f1.start.value = "Location X"
-            document.f1.end.value = "Location Y"
-            document.f1.description.value = "Random Description"
-            document.f2.ride_dep.value = "07:00 am"
-            document.f2.ride_ar.value = "07:30 am"
-            document.f2.mon.checked = true
-            document.f2.tue.checked = true
-            document.f2.wed.checked = true
-            document.f2.thu.checked = true
-            document.f2.fri.checked = true
-        </script>
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
         <script src="js/dashboard.js"></script>    
     </body>

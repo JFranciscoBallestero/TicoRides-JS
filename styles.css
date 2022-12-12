@@ -90,8 +90,8 @@ button.save{
 	padding:10px 10px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
-    margin-left: 100px;
-    
+    margin-right: 100px;
+    margin-left: -5px;
 }
 
 button.cancel{   
@@ -108,7 +108,7 @@ button.cancel{
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
     margin-right: 100px;
-    margin-left: -270px;
+    margin-left: -5px;
 }
 
 button.cancelSet{   

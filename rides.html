@@ -47,16 +47,19 @@
                         </td>
                     </tr>
                     <tr>
-                        <th >Start From</th>
-                        <th>End</th>
+                        <th>Start From</th>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" name="start_ride" placeholder="Input text">
+                            <input type="text" name="start" placeholder="Input text" readonly>
                             <button type="button" onclick="window.location.href='https://www.google.com/maps'">
                                 <img src="/images/Google-Maps-icon.png" alt="">
                             </button>
                         </td>
+                    </tr>
+                    <tr>
+                        <th>End</th>
+                    </tr>
                         <td>
                             <input type="text" name="start_ride" placeholder="Input text">
                             <button type="button" onclick="window.location.href='https://www.google.com/maps'">
@@ -74,7 +77,6 @@
                     </tr>
                 </table>
             </form>
-            
             <form action="ride.php" method="post">
                 <div class="row">
                     <div class="column">
@@ -99,11 +101,6 @@
                                     <input type="text"  name="ride_ar" placeholder="00:00">
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    
-                                </td>
-                            </tr>
                         </table>
                     </div>
                     <div>
@@ -114,24 +111,19 @@
                             <tr>
                                 <td>
                                     <input type="checkbox" value="Monday">
-                                    <label for="vehicle1"> Monday</label><br>
+                                    <label> Monday</label><br>
                                     <input type="checkbox" value="Tuesday">
-                                    <label for="vehicle1"> Tuesday </label><br>
+                                    <label> Tuesday </label><br>
                                     <input type="checkbox" value="Wednesday">
-                                    <label for="vehicle1"> Wednesday </label><br>
+                                    <label> Wednesday </label><br>
                                     <input type="checkbox" value="Thursday">
-                                    <label for="vehicle1"> Thursday </label><br>
+                                    <label> Thursday </label><br>
                                     <input type="checkbox" value="Friday">
-                                    <label for="vehicle1"> Friday </label><br>
+                                    <label> Friday </label><br>
                                     <input type="checkbox" value="Saturday">
-                                    <label for="vehicle1"> Saturday </label><br>
+                                    <label> Saturday </label><br>
                                     <input type="checkbox" value="Sunday">
-                                    <label for="vehicle1"> Sunday </label><br>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    
+                                    <label> Sunday </label><br>
                                 </td>
                             </tr>
                         </table>
