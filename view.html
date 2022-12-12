@@ -38,14 +38,14 @@
                 <li>View Ride</li>
             </ul>
         </div>
-        <form action="ride.php" method="post" name="f1">
+        <form>
             <table class="left">
                 <tr>
                     <th>Ride Name</th>
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" name="ride_name" placeholder="Input text" readonly>
+                        <input type="text" id="rideName" placeholder="Input text">
                     </td>
                 </tr>
                 <tr>
@@ -53,7 +53,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" name="start" placeholder="Input text" readonly>
+                        <input type="text" id="startTrip" placeholder="Input text">
                         <button type="button" onclick="window.location.href='https://www.google.com/maps'">
                             <img src="/images/Google-Maps-icon.png" alt="">
                         </button>
@@ -63,7 +63,7 @@
                     <th>End</th>
                 </tr>
                     <td>
-                        <input type="text" name="end" placeholder="Input text" readonly>
+                        <input type="text" id="endTrip" placeholder="Input text">
                         <button type="button" onclick="window.location.href='https://www.google.com/maps'">
                             <img src="/images/Google-Maps-icon.png" alt="">
                         </button>
@@ -74,13 +74,12 @@
                 </tr>
                 <tr>
                     <td>
-                        <textarea rows="5" cols="40" name="description"
-                            placeholder="Add here the description of the ride" readonly></textarea>
+                        <textarea rows="5" cols="40" id="description" placeholder="Add here the description of the ride"></textarea>
                     </td>
                 </tr>
             </table>
         </form>
-        <form action="ride.php" method="post" name="f2">
+        <form action="ride.php" method="post">
             <div class="row">
                 <div class="column">
                     <table class="left">
@@ -92,7 +91,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="text" name="ride_dep" placeholder="00:00" readonly>
+                                <input type="text"id="rideDep" placeholder="00:00">
+    
                             </td>
                         </tr>
                         <tr>
@@ -100,7 +100,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="text" name="ride_ar" placeholder="00:00" readonly>
+                                <input type="text"  id="rideAr" placeholder="00:00">
                             </td>
                         </tr>
                     </table>
@@ -112,19 +112,19 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="checkbox" name="mon" value="Monday" disabled>
+                                <input type="checkbox" id="mondayCh">
                                 <label>Monday</label><br>
-                                <input type="checkbox" name="tue" value="Tuesday" disabled>
+                                <input type="checkbox" id="tuesdayCh">
                                 <label>Tuesday</label><br>
-                                <input type="checkbox" name="wed" value="Wednesday" disabled>
+                                <input type="checkbox" id="wednesdayCh">
                                 <label>Wednesday</label><br>
-                                <input type="checkbox" name="thu" value="Thursday" disabled>
+                                <input type="checkbox" id="thursdayCh">
                                 <label>Thursday</label><br>
-                                <input type="checkbox" name="fri" value="Friday" disabled>
+                                <input type="checkbox" id="fridayCh">
                                 <label>Friday</label><br>
-                                <input type="checkbox" name="sat" value="Saturday" disabled>
+                                <input type="checkbox" id="satdayCh">
                                 <label>Saturday</label><br>
-                                <input type="checkbox" name="sun" value="Sunday" disabled>
+                                <input type="checkbox" id="sundayCh">
                                 <label>Sunday</label><br>
                             </td>
                         </tr>

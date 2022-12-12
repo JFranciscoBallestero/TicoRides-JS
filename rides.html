@@ -13,7 +13,7 @@
             </div>
             <div class="txtUser">
                 <p id="wlcmMessage"></p>
-                <button class="btnOut"  type="button" onclick="window.location.href='http://ticorides.com'">
+                <button class="btnOut"  type="button" onclick="window.location.href='index.html'">
                     Logout
                 </button> 
             </div>
@@ -36,14 +36,14 @@
                     <li>New Ride</li>
                 </ul>
             </div>
-            <form action="ride.php" method="post">
+            <form>
                 <table class="left">
                     <tr>
                         <th>Ride Name</th>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" name="ride_name" placeholder="Input text">
+                            <input type="text" id="rideName" placeholder="Input text">
                         </td>
                     </tr>
                     <tr>
@@ -51,7 +51,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" name="start" placeholder="Input text" readonly>
+                            <input type="text" id="startTrip" placeholder="Input text">
                             <button type="button" onclick="window.location.href='https://www.google.com/maps'">
                                 <img src="/images/Google-Maps-icon.png" alt="">
                             </button>
@@ -61,7 +61,7 @@
                         <th>End</th>
                     </tr>
                         <td>
-                            <input type="text" name="start_ride" placeholder="Input text">
+                            <input type="text" id="endTrip" placeholder="Input text">
                             <button type="button" onclick="window.location.href='https://www.google.com/maps'">
                                 <img src="/images/Google-Maps-icon.png" alt="">
                             </button>
@@ -72,7 +72,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <textarea rows = "5" cols = "40" name = "description" placeholder="Add here the description of the ride"></textarea>
+                            <textarea rows="5" cols="40" id="description" placeholder="Add here the description of the ride"></textarea>
                         </td>
                     </tr>
                 </table>
@@ -89,7 +89,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="text" name="ride_dep" placeholder="00:00">
+                                    <input type="text"id="rideDep" placeholder="00:00">
         
                                 </td>
                             </tr>
@@ -98,7 +98,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="text"  name="ride_ar" placeholder="00:00">
+                                    <input type="text"  id="rideAr" placeholder="00:00">
                                 </td>
                             </tr>
                         </table>
@@ -110,30 +110,30 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="checkbox" value="Monday">
-                                    <label> Monday</label><br>
-                                    <input type="checkbox" value="Tuesday">
-                                    <label> Tuesday </label><br>
-                                    <input type="checkbox" value="Wednesday">
-                                    <label> Wednesday </label><br>
-                                    <input type="checkbox" value="Thursday">
-                                    <label> Thursday </label><br>
-                                    <input type="checkbox" value="Friday">
-                                    <label> Friday </label><br>
-                                    <input type="checkbox" value="Saturday">
-                                    <label> Saturday </label><br>
-                                    <input type="checkbox" value="Sunday">
-                                    <label> Sunday </label><br>
+                                    <input type="checkbox" id="mondayCh">
+                                    <label>Monday</label><br>
+                                    <input type="checkbox" id="tuesdayCh">
+                                    <label>Tuesday</label><br>
+                                    <input type="checkbox" id="wednesdayCh">
+                                    <label>Wednesday</label><br>
+                                    <input type="checkbox" id="thursdayCh">
+                                    <label>Thursday</label><br>
+                                    <input type="checkbox" id="fridayCh">
+                                    <label>Friday</label><br>
+                                    <input type="checkbox" id="satdayCh">
+                                    <label>Saturday</label><br>
+                                    <input type="checkbox" id="sundayCh">
+                                    <label>Sunday</label><br>
                                 </td>
                             </tr>
                         </table>
                     </div>
                 </div>
             </form>
-            <button type="button" class="cancel" onclick="window.location.href='dashboard.html'">Cancel</button>
-            <button type="button" class="save" onclick="window.location.href='dashboard.html'">Save</button>
+            <button type="button" id="cancelRide" class="cancel">Cancel</button>
+            <button type="button" id="saveR" class="save">Save</button>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-        <script src="js/dashboard.js"></script>
+        <script src="js/rides.js"></script>
     </body>
 </html>

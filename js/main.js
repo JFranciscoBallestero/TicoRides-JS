@@ -20,7 +20,7 @@ $(function(){
                 alert('The password needs to be the same');
             }
             else if (pass == passVerf){
-                if (localStorage.getItem('users') === null){
+                if (localStorage.getItem('users') == null){
                     const newUser = [data];
                     saveToLocalStorage('users', newUser);
                     saveToLocalStorage('currentUser', newUser);
@@ -28,7 +28,7 @@ $(function(){
                 }
                 else{
                     const userArray = JSON.parse(localStorage.getItem('users'));
-                    if(userArray.some((x)=>{return x.usName==usName}))
+                    if(userArray.some((x)=>{return x.usName == usName}))
                     {
                         alert("The username is already in use.");
                     }
@@ -56,7 +56,7 @@ $(function(){
             }
             else{
                 const userArray = JSON.parse(localStorage.getItem('users'));
-                if(userArray.some((x)=>{return x.usName==user && x.pass==password}))
+                if(userArray.some((x)=>{return x.usName == user && x.pass == password}))
                 {
                     const index = userArray.findIndex(({usName}) => usName == user);
                     const current = [userArray[index]];
