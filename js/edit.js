@@ -1,8 +1,38 @@
 $(function(){
     /*Generates the welcome message*/
     let current = JSON.parse(localStorage.getItem('currentUser'));
+    const rides = JSON.parse(localStorage.getItem('rides'));
     let message = document.getElementById("wlcmMessage");
+    const index = JSON.parse(localStorage.getItem('currentRide')); 
     message.innerHTML = "Welcome " + current[0]['usName'];
+    document.getElementById('rideName').value = rides[index]['rideName'];
+    document.getElementById('startTrip').value = rides[index]['start'];
+    document.getElementById('endTrip').value = rides[index]['end'];
+    document.getElementById('description').value = rides[index]['description'];
+    document.getElementById('rideDep').value = rides[index]['rideDep'];
+    document.getElementById('rideAr').value = rides[index]['rideAr'];
+    if (rides[index]['mon']  == '1'){
+        document.getElementById('mondayCh').checked = true;
+    }
+    if (rides[index]['tue'] == '1'){
+        document.getElementById('tuesdayCh').checked = true;
+    }
+    if (rides[index]['wed'] == '1'){
+        document.getElementById('wednesdayCh').checked = true;
+    }
+    if (rides[index]['thu'] == '1'){
+        document.getElementById('thursdayCh').checked = true;
+    }
+    if (rides[index]['fri'] == '1'){
+        document.getElementById('fridayCh').checked = true;
+    }
+    if (rides[index]['sat'] == '1'){
+        document.getElementById('satdayCh').checked = true;
+    }
+    if (rides[index]['sun'] == '1'){
+        document.getElementById('sundayCh').checked = true;
+    }
+    
     $('#saveR').click(function(){
         const rideName = document.getElementById('rideName').value;
         const start = document.getElementById('startTrip').value;
@@ -32,76 +62,58 @@ $(function(){
             else{
                 alert('Please fill every text field.');
             }
-            
         }
         else if (mondayCh.checked == true || tuesdayCh.checked == true || wednesdayCh.checked == true || thursdayCh.checked == true
         || fridayCh.checked == true || satdayCh.checked == true || sundayCh.checked == true){
-                if (localStorage.getItem('rides') == null){
                     const user = current[0]['usName'];
                     if (mondayCh.checked == true){
                         mon = '1';
                     }
+                    else if (mondayCh.checked == false){
+                        mon = '0';
+                    }
                     if (tuesdayCh.checked == true){
                         tue = '1';
+                    }
+                    else if (tuesdayCh.checked == false){
+                        tue = '0';
                     }
                     if (wednesdayCh.checked == true){
                         wed = '1';
                     }
+                    else if (wednesdayCh.checked == false){
+                        wed = '0';
+                    }
                     if (thursdayCh.checked == true){
                         thu = '1';
+                    }
+                    else if (thursdayCh.checked == false){
+                        thu = '0';
                     }
                     if (fridayCh.checked == true){
                         fri = '1';
                     }
+                    else if (fridayCh.checked == false){
+                        fri = '0';
+                    }
                     if (satdayCh.checked == true){
+                        sat = '1';
+                    }
+                    else if (satdayCh.checked == false){
                         sat = '1';
                     }
                     if (sundayCh.checked == true){
                         sun = '1';
                     }
+                    else if (sundayCh.checked == false){
+                        sun = '0';
+                    }
                     const data = {user, rideName, start, end, description, rideDep, rideAr, mon, tue, wed, thu, fri, sat, sun};
-                    const newRide = [data];
-                    saveToLocalStorage('rides', newRide);
-                    alert('Ride created.');
+                    rides.splice(index, 1);
+                    rides.push(data);
+                    saveToLocalStorage('rides', rides);
+                    alert("The ride's information has been updated.");
                     window.location.href = 'dashboard.html';
-                }
-                else{
-                    const user = current[0]['usName'];
-                    if (mondayCh.checked == true){
-                        mon = '1';
-                    }
-                    if (tuesdayCh.checked == true){
-                        tue = '1';
-                    }
-                    if (wednesdayCh.checked == true){
-                        wed = '1';
-                    }
-                    if (thursdayCh.checked == true){
-                        thu = '1';
-                    }
-                    if (fridayCh.checked == true){
-                        fri = '1';
-                    }
-                    if (satdayCh.checked == true){
-                        sat = '1';
-                    }
-                    if (sundayCh.checked == true){
-                        sun = '1';
-                    }
-                    const data = {user, rideName, start, end, description, rideDep, rideAr, mon, tue, wed, thu, fri, sat, sun};
-                    const ridesArray = JSON.parse(localStorage.getItem('rides'));
-                    if(ridesArray.some((x)=>{return x.rideName == rideName}))
-                    {
-                        alert("There is a ride with that name already.");
-                    }
-                    else{
-                        const newRide = [data];
-                        ridesArray.push(data);
-                        saveToLocalStorage('rides', ridesArray);
-                        alert('Ride created.');
-                        window.location.href = 'dashboard.html';
-                    }
-                }
         }
         else{
             alert('Please fill and check every space.');

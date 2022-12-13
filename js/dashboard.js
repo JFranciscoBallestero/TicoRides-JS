@@ -16,19 +16,29 @@ $(function(){
                     row += `<td>${ride.rideName}</td>`;
                     row += `<td>${ride.start}</td>`;
                     row += `<td>${ride.end}</td>`;
-                    row += `<td> <a onclick="view('${index}')" href="#">View</a>  |  <a  href="#" class="edit">Edit</a>  |  <a  href="#">Delete</a></td>`;
+                    row += `<td> <a href="#" onclick="view('${index}')">View</a>  |  <a href="#" onclick="edit('${index}')">Edit</a>  |  <a href="#" onclick="deleteRide('${index}')">Delete</a></td>`;
                     rows += row + "</tr>";
                 }
             });
             table.innerHTML = rows;
       }
     }
+
     createTable();
-  
 })
 function view(ride){
     saveToLocalStorage('currentRide', ride);
     window.location.href = 'view.html';
+}
+
+function edit(ride){
+    saveToLocalStorage('currentRide', ride);
+    window.location.href = 'edit.html';
+}
+
+function deleteRide(ride){
+    saveToLocalStorage('currentRide', ride);
+    window.location.href = 'delete.html';
 }
 
     /*Fuction used to save information into the Local Storage*/
