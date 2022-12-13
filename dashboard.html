@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>My Dashboad - TicoRides</title> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css" type="text/css">
-    </head>
-    <body >
-        <div class="container">
-            <div class="user">
-                <img src="/images/Folders-OS-User-No-Frame-Metro-icon.png" alt="">
-            </div>
-            <div class="txtUser">
-                <p id="wlcmMessage"></p>
-                <button class="btnOut"  type="button" onclick="window.location.href='index.html'">
-                    Logout
-                </button> 
-            </div>
+
+<head>
+    <title>My Dashboad - TicoRides</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="user">
+            <img src="/images/Folders-OS-User-No-Frame-Metro-icon.png" alt="">
+        </div>
+        <div class="txtUser">
+            <p id="wlcmMessage"></p>
+            <button class="btnOut" type="button" onclick="window.location.href='index.html'">
+                Logout
+            </button>
+        </div>
+        <div>
+            <img class="img2" src="/images/car-icon.png" alt="" width="150" height="100">
+        </div>
+    </div>
+    <div class="container">
+        <div class="topnav">
+            <a class="active" href="">My Dashboard</a>
+            <a href="rides.html">New Ride</a>
+            <a href="settings.html">Settings</a>
+        </div>
+        <div>
             <div>
-                <img class="img2" src="/images/car-icon.png" alt="" width="150" height="100">
+                <h2>My Dashboard</h2>
+                <ul class="breadcrumb">
+                    <li>My Dashboard</li>
+                    <li></li>
+                </ul>
             </div>
         </div>
-        <div class="container">
-            <div class="topnav">
-                <a class="active" href="">My Dashboard</a>
-                <a href="rides.html">New Ride</a>
-                <a href="settings.html">Settings</a>
-            </div>
-            <div>
-                <div>
-                    <h2>My Dashboard</h2>
-                    <ul class="breadcrumb">
-                        <li>My Dashboard</li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-            <section>
-                <h3>My Rides:</h3>
-                <table class="tbl">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Start</th>
-                            <th>End</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody id="ridesTable">
-                    </tbody>
-                </table>
-            </section>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-        <script src="js/dashboard.js"></script>
-    </body>
+        <section>
+            <h3>My Rides:</h3>
+            <table class="tbl">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Start</th>
+                        <th>End</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="ridesTable">
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+
 </html>

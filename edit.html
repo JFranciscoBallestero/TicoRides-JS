@@ -1,139 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Edit Ride - TicoRides</title> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css" type="text/css">
-    </head>
-    <body >
-        <div class="container">
-            <div class="user">
-                <img src="/images/Folders-OS-User-No-Frame-Metro-icon.png" alt="">
-            </div>
-            <div class="txtUser">
-                <p id="wlcmMessage"></p>
-                <button class="btnOut"  type="button" onclick="window.location.href='index.html'">
-                    Logout
-                </button> 
-            </div>
-            <div>
-                <img class="img2" src="/images/car-icon.png" alt="" width="150" height="100">
-            </div>
+
+<head>
+    <title>Edit Ride - TicoRides</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="user">
+            <img src="/images/Folders-OS-User-No-Frame-Metro-icon.png" alt="">
         </div>
-        <div class="container">
-            <div class="topnav">
-                <a href="dashboard.html">Dashboard</a>
-                <a class="active" href="">New Ride</a>
-                <a href="settings.html">Settings</a>
-            </div>
+        <div class="txtUser">
+            <p id="wlcmMessage"></p>
+            <button class="btnOut" type="button" onclick="window.location.href='index.html'">
+                Logout
+            </button>
         </div>
         <div>
-            <div>
-                <h2>Edit Ride</h2>
-                <ul class="breadcrumb">
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li>Edit Ride</li>
-                </ul>
-            </div>
-            <form>
-                <table class="left">
-                    <tr>
-                        <th>Ride Name</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" id="rideName" placeholder="Input text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Start From</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" id="startTrip" placeholder="Input text">
-                            <button type="button" onclick="window.location.href='https://www.google.com/maps'">
-                                <img src="/images/Google-Maps-icon.png" alt="">
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>End</th>
-                    </tr>
-                        <td>
-                            <input type="text" id="endTrip" placeholder="Input text">
-                            <button type="button" onclick="window.location.href='https://www.google.com/maps'">
-                                <img src="/images/Google-Maps-icon.png" alt="">
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <textarea rows="5" cols="40" id="description" placeholder="Add here the description of the ride"></textarea>
-                        </td>
-                    </tr>
-                </table>
-            </form>
-            <form action="ride.php" method="post">
-                <div class="row">
-                    <div class="column">
-                        <table class="left">
-                            <tr>
-                                <th>When</th>
-                            </tr>
-                            <tr>
-                                <th>Departure</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="text"id="rideDep" placeholder="00:00">
-        
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>Estimade Arrival</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="text"  id="rideAr" placeholder="00:00">
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div>
-                        <table>
-                            <tr>
-                                <th>Select Days</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox" id="mondayCh">
-                                    <label>Monday</label><br>
-                                    <input type="checkbox" id="tuesdayCh">
-                                    <label>Tuesday</label><br>
-                                    <input type="checkbox" id="wednesdayCh">
-                                    <label>Wednesday</label><br>
-                                    <input type="checkbox" id="thursdayCh">
-                                    <label>Thursday</label><br>
-                                    <input type="checkbox" id="fridayCh">
-                                    <label>Friday</label><br>
-                                    <input type="checkbox" id="satdayCh">
-                                    <label>Saturday</label><br>
-                                    <input type="checkbox" id="sundayCh">
-                                    <label>Sunday</label><br>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </form>
-            <button type="button" class="cancel" onclick="window.location.href='dashboard.html'">Cancel</button>
-            <button type="button" id="saveR" class="save">Save</button>
+            <img class="img2" src="/images/car-icon.png" alt="" width="150" height="100">
         </div>
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-        <script src="js/edit.js"></script>
-    </body>
+    </div>
+    <div class="container">
+        <div class="topnav">
+            <a href="dashboard.html">Dashboard</a>
+            <a class="active" href="">New Ride</a>
+            <a href="settings.html">Settings</a>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h2>Edit Ride</h2>
+            <ul class="breadcrumb">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li>Edit Ride</li>
+            </ul>
+        </div>
+        <form>
+            <table class="left">
+                <tr>
+                    <th>Ride Name</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="rideName" placeholder="Input text">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Start From</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="startTrip" placeholder="Input text">
+                        <button type="button" onclick="window.location.href='https://www.google.com/maps'">
+                            <img src="/images/Google-Maps-icon.png" alt="">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th>End</th>
+                </tr>
+                <td>
+                    <input type="text" id="endTrip" placeholder="Input text">
+                    <button type="button" onclick="window.location.href='https://www.google.com/maps'">
+                        <img src="/images/Google-Maps-icon.png" alt="">
+                    </button>
+                </td>
+                </tr>
+                <tr>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea rows="5" cols="40" id="description"
+                            placeholder="Add here the description of the ride"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <form action="ride.php" method="post">
+            <div class="row">
+                <div class="column">
+                    <table class="left">
+                        <tr>
+                            <th>When</th>
+                        </tr>
+                        <tr>
+                            <th>Departure</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="rideDep" placeholder="00:00">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Estimade Arrival</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="rideAr" placeholder="00:00">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <th>Select Days</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="mondayCh">
+                                <label>Monday</label><br>
+                                <input type="checkbox" id="tuesdayCh">
+                                <label>Tuesday</label><br>
+                                <input type="checkbox" id="wednesdayCh">
+                                <label>Wednesday</label><br>
+                                <input type="checkbox" id="thursdayCh">
+                                <label>Thursday</label><br>
+                                <input type="checkbox" id="fridayCh">
+                                <label>Friday</label><br>
+                                <input type="checkbox" id="satdayCh">
+                                <label>Saturday</label><br>
+                                <input type="checkbox" id="sundayCh">
+                                <label>Sunday</label><br>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </form>
+        <button type="button" class="cancel" onclick="window.location.href='dashboard.html'">Cancel</button>
+        <button type="button" id="saveR" class="save">Save</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="js/edit.js"></script>
+</body>
+
 </html>

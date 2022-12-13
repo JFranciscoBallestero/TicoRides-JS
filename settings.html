@@ -1,79 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Settings - TicoRides</title> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css" type="text/css">
-    </head>
-    <body >
-        <div class="container">
-            <div class="user">
-                <img src="/images/Folders-OS-User-No-Frame-Metro-icon.png" alt="">
-            </div>
-            <div class="txtUser">
-                <p id="wlcmMessage"></p>
-                <button class="btnOut"  type="button" onclick="window.location.href='index.html'">
-                    Logout
-                </button> 
-            </div>
-            <div>
-                <img class="img2" src="/images/car-icon.png" alt="" width="150" height="100">
-            </div>
+
+<head>
+    <title>Settings - TicoRides</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="user">
+            <img src="/images/Folders-OS-User-No-Frame-Metro-icon.png" alt="">
         </div>
-        <div class="container">
-            <div class="topnav">
-                <a href="dashboard.html">Dashboard</a>
-                <a  href="rides.html">New Ride</a>
-                <a class="active" href="">Settings</a>
-            </div>
+        <div class="txtUser">
+            <p id="wlcmMessage"></p>
+            <button class="btnOut" type="button" onclick="window.location.href='index.html'">
+                Logout
+            </button>
         </div>
         <div>
-            <div>
-                <h2>Settings</h2>
-                <ul class="breadcrumb">
-                    <li><a href="dashboard.html">My Dashboard</a></li>
-                    <li>Settings</li>
-                </ul>
-            </div>
-            <form action="data.php" method="post" name="f1">
-                <table class="left">
-                    <tr>
-                        <th>Full Name</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" id="fullName" name="full_name" placeholder="Input text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Speed Average</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" id="speed" name="user_speed" placeholder="XX km/h">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>About Me</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <textarea rows = "5" cols = "40" id="about" name = "description" placeholder="Something about me goes here"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button type="button" class="cancel" onclick="window.location.href='dashboard.html'">Cancel</button>
-                        </td>
-                        <td>
-                            <button type="button" id="saveUser" class="save">Save</button>
-                        </td>
-                    </tr>
-                </table>
-            </form>
+            <img class="img2" src="/images/car-icon.png" alt="" width="150" height="100">
         </div>
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-        <script src="js/settings.js"></script>      
-    </body>
+    </div>
+    <div class="container">
+        <div class="topnav">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="rides.html">New Ride</a>
+            <a class="active" href="">Settings</a>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h2>Settings</h2>
+            <ul class="breadcrumb">
+                <li><a href="dashboard.html">My Dashboard</a></li>
+                <li>Settings</li>
+            </ul>
+        </div>
+        <form action="data.php" method="post" name="f1">
+            <table class="left">
+                <tr>
+                    <th>Full Name</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="fullName" name="full_name" placeholder="Input text">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Speed Average</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="speed" name="user_speed" placeholder="XX km/h">
+                    </td>
+                </tr>
+                <tr>
+                    <th>About Me</th>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea rows="5" cols="40" id="about" name="description"
+                            placeholder="Something about me goes here"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="cancel"
+                            onclick="window.location.href='dashboard.html'">Cancel</button>
+                    </td>
+                    <td>
+                        <button type="button" id="saveUser" class="save">Save</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="js/settings.js"></script>
+</body>
+
 </html>

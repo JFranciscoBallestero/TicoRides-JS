@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>TicoRides</title> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="container">
-            <button class="btnRight"  type="button" onclick="window.location.href='login.html'">
-                Login
-            </button>
-            <div class="banner">
-                <div  class="image" >
-                    <img src="/images/car-icon.png" width="150" height="150" alt="">
-                </div>
-                <h1> Welcome to TicoRides.com </h1>
+
+<head>
+    <title>TicoRides</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <button class="btnRight" type="button" onclick="window.location.href='login.html'">
+            Login
+        </button>
+        <div class="banner">
+            <div class="image">
+                <img src="/images/car-icon.png" width="150" height="150" alt="">
             </div>
-            <section>
-                <h2 >Search for a ride</h2>
-                <form class="form-inline" action="search.php">
-                    <label>From:</label>
-                    <input type="text" id="from" placeholder="Input text">
-                    <button type="button" onclick="window.location.href='https://www.google.com/maps'">
-                        <img src="/images/Google-Maps-icon.png" alt="">
-                    </button>
-                    <label>To:</label>
-                    <input type="text" id="to" placeholder="Input text">
-                    <button type="button" onclick="window.location.href='https://www.google.com/maps'">
-                        <img src="/images/Google-Maps-icon.png" alt="" >
-                    </button>
-                    <button type="button" id="search" class="btn">Find my Ride!</button>
-                </form>
-            </section>
-            <section>
-                <h3>Results for Rides that matches your criteria:</h3>
-                <table class="tbl">
-                    <thead>
-                        <tr>
-                            <th>User</th>
-                            <th>Start</th>
-                            <th>End</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody id="ridesTable">
-                    </tbody>
-                </table>
-            </section>
+            <h1> Welcome to TicoRides.com </h1>
         </div>
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-        <script src="js/index.js"></script>
-    </body>
+        <section>
+            <h2>Search for a ride</h2>
+            <form class="form-inline" action="search.php">
+                <label>From:</label>
+                <input type="text" id="from" placeholder="Input text">
+                <button type="button" onclick="window.location.href='https://www.google.com/maps'">
+                    <img src="/images/Google-Maps-icon.png" alt="">
+                </button>
+                <label>To:</label>
+                <input type="text" id="to" placeholder="Input text">
+                <button type="button" onclick="window.location.href='https://www.google.com/maps'">
+                    <img src="/images/Google-Maps-icon.png" alt="">
+                </button>
+                <button type="button" id="search" class="btn">Find my Ride!</button>
+            </form>
+        </section>
+        <section>
+            <h3>Results for Rides that matches your criteria:</h3>
+            <table class="tbl">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Start</th>
+                        <th>End</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="ridesTable">
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
 </html>
