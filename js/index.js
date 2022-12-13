@@ -18,6 +18,15 @@ $(function(){
                 table.innerHTML = rows;
           }
         }
-    
         createTable();
 })
+
+function view(ride){
+    saveToLocalStorage('currentRide', ride);
+    window.location.href = 'viewNotUser.html';
+}
+/*Fuction used to save information into the Local Storage*/
+function saveToLocalStorage(key, value) {
+    localStorage.setItem(key, JSON.stringify(value));
+    return true;
+}
